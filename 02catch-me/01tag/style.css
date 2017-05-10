@@ -1,0 +1,15 @@
+span {
+background-color:red;
+}
+
+section {
+background-color:blue;
+}
+
+a {
+background-color:#000000; /*you know it's black anyway*/
+}
+
+p {
+background-color:#abcdef;
+}

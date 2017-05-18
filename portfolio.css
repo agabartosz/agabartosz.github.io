@@ -1,0 +1,35 @@
+
+.mygrid {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+   grid-template-columns: 1fr;
+    grid-template-rows: 1fr 30px;
+    grid-template-areas: "projekty1 projekty2 projekty3"
+                         "footer footer footer";
+    margin: 20px auto;
+}
+
+.mygrid>* {
+    border: 3px dashed magenta;
+}
+
+article {
+    grid-area: artykul;
+}
+
+div.projekty {
+    grid-area: projekty1;
+}
+
+div.projekty {
+    grid-area: projekty2;
+}
+
+div.projekty {
+    grid-area: projekty3;
+}
+
+footer {
+    grid-area: footer;
+}

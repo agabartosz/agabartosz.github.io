@@ -1,32 +1,35 @@
 
+
 .mygrid {
-    width: 600px;
+    width: 1080px;
     display: grid;
+    position: absolute
     grid-gap: 10px;
-   grid-template-columns: 1fr;
+    
+    
+   grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 30px;
-    grid-template-areas: "projekty1 projekty2 projekty3"
+    grid-template-areas:
+                         "projekty1 projekty2 projekty3"
                          "footer footer footer";
     margin: 20px auto;
 }
 
-.mygrid>* {
-    border: 3px dashed magenta;
+
+
+.header {
+    grid-area: header;
 }
 
-article {
-    grid-area: artykul;
-}
-
-div.projekty {
+div.projekty1 {
     grid-area: projekty1;
 }
 
-div.projekty {
+div.projekty2 {
     grid-area: projekty2;
 }
 
-div.projekty {
+div.projekty3 {
     grid-area: projekty3;
 }
 

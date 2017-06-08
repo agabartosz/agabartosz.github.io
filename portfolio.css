@@ -1,7 +1,9 @@
-
+* {
+    box-sizing: border-box;
+}
 
 .mygrid {
-    width: 1080px;
+    width: 100%;
     display: grid;
     position: absolute
     grid-gap: 10px;
@@ -16,7 +18,9 @@
 }
 
 
-
+.column img{
+    width: 300px;
+}
 .header {
     grid-area: header;
 }

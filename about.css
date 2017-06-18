@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body
+{
+   
+margin: 0;
+padding: 0;
+    width: 100%;
+    height:100%;
+}
+
+.header {
+    
+}
+
+.mygrid {
+    width: 100%;
+    display: grid;
+  grid-row-gap: 30px;
+   grid-template-columns: 300px 1fr 2fr;
+    grid-template-rows: 70px 1fr 100px;
+    grid-template-areas: "header1 header2 header3"
+                         "projekty1 projekty2 projekty3"
+                         "footer footer footer";
+
+}
+
+
+div.header1 {
+    grid-area: header1;
+    font-size: 20px;
+     text-align: left;
+    color: #0004ff;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+div.header3 {
+    grid-area: header3;
+    font-size: 20px;
+     text-align: left;
+}
+
+div.projekty1 {
+    grid-area: projekty1;
+    text-align: center;
+}
+
+div.projekty2 {
+    grid-area: projekty2;
+    font-size: 14px;
+    text-align: left;
+}
+
+div.projekty3 {
+    grid-area: projekty3;
+      font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 10px;
+ }

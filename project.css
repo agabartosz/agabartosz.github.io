@@ -3,9 +3,16 @@
 }
 
 html, body
-{margin: 0;
+{
+   
+margin: 0;
 padding: 0;
     width: 100%;
+    height:100%;
+}
+
+.header {
+    
 }
 
 .mygrid {
@@ -16,21 +23,8 @@ padding: 0;
     grid-template-rows: 70px 1fr 100px;
     grid-template-areas: "header header header"
                          "projekty1 projekty2 projekty3"
-                         "footer footer footer";
-
-background: linear-gradient(53deg, #fd00ff, #0600ff, #ff0063, #8d00ff);
-background-size: 300% 300%;
-animation: Tlo 24s infinite;
-    
+        "footer footer footer";
 }
-
-
-@keyframes Tlo {
-    0%{background-position:0% 75%}
-    50%{background-position:100% 26%}
-    100%{background-position:0% 75%}
-}
-
 
 .column {
     text-align: center;
@@ -41,28 +35,39 @@ animation: Tlo 24s infinite;
     padding: 40px;
 }
 
-header {
-    grid-area: header;
-    text-align: center;
+
+div.header1 {
+    grid-area: header1;
     font-size: 20px;
+     text-align: left;
+    color: #0004ff;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
+div.header3 {
+    grid-area: header3;
+    font-size: 20px;
+     text-align: left;
+}
 
 div.projekty1 {
     grid-area: projekty1;
-    
 }
 
 div.projekty2 {
     grid-area: projekty2;
+    text-align: center;
 }
 
 div.projekty3 {
     grid-area: projekty3;
+    text-align: left;
+       font-size: 14px;
 }
 
 footer {
     grid-area: footer;
     text-align: center;
-    color: #ffffff;
+    font-size: 10px;
 }

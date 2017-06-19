@@ -41,15 +41,19 @@ animation: Tlo 24s infinite;
     padding: 40px;
 }
 
+.column img:hover{background: #00faff; }
+
 header {
     grid-area: header;
     text-align: center;
     font-size: 20px;
 }
 
+hover{background: #0004ff; }
 
 div.projekty1 {
     grid-area: projekty1;
+  
     
 }
 
